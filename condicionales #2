@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    char contra[100], contraG[100];
+    int igualdad=0;
+    printf("Cree una contraseña: ");
+    scanf("%s", contra);
+    
+    printf("Ingrese la contraseña creada: ");
+    scanf("%s", contraG);
+    
+    
+    for (int i=0;i<10;i++){
+      if(contra[i]!=contraG[i])
+        igualdad=-1;
+}
+    if(igualdad==0){
+        printf("Contraseña existente");
+    }
+    else{
+        printf("Contraseña no existente");
+    }
+    
+    return 0;
+}
