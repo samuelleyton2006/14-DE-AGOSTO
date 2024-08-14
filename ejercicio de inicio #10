@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(void) {
+    int payasos=0, munecas=0;
+    printf("cuantos payasos se vendieron \n");
+    scanf("%d",&payasos);
+    printf("cuantas munecas se vendieron \n");
+    scanf("%d",&munecas);
+    int pesoTotal=(payasos*112)+(munecas*75);
+    printf("el peso total de la venta fue %d \n", pesoTotal);
+
+
+
+    return 0;
+}
