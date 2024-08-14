@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    
+char nombre[50];
+   printf("Introduce tu nombre: ");
+   scanf("%s", nombre);
+   printf("Hola %s", nombre);
+   
+   return 0;
+}
