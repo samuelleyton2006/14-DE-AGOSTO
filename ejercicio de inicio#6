@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    
+    int n;
+    int suma;
+    
+    printf("Ingresa un número entero positivo: ");
+    scanf("%d", &n);
+    
+        suma = n * (n + 1) / 2;
+        
+        printf("La suma de todos los enteros desde 1 hasta %d es: %d\n", n, suma);
+    
+    return 0;
+}
