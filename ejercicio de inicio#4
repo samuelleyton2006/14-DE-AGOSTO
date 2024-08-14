@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    
+    float numerador = 3.0 + 2.0;
+    float denominador = 2.0 * 5.0;
+    float division = numerador / denominador;
+    float resultado = pow(division, 2);
+    
+    
+    printf("El resultado de la operación es: %f\n", resultado);
+    
+    return 0;
+}
