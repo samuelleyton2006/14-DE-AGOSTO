@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int main() {
+    char tipo_pizza;
+    char ingrediente;
+
+    
+    printf("pizza vegetariana? (v) o no vegetariana (n)? ");
+    scanf(" %c", &tipo_pizza);
+
+    
+    if (tipo_pizza == 'v') {
+        printf("Has elegido una pizza vegetariana. Elige un ingrediente adicional:\n");
+        printf("p: Pimiento\n");
+        printf("t: Tofu\n");
+        printf("Ingresa la letra correspondiente: ");
+        scanf(" %c", &ingrediente);
+
+        
+        printf("Has elegido una pizza vegetariana con mozzarella, tomate ");
+        if (ingrediente == 'p') {
+            printf("y Pimiento.\n");
+        } else if (ingrediente == 't') {
+            printf("y Tofu.\n");
+        } else {
+            printf("y un ingrediente no válido.\n");
+        }
+    } else if (tipo_pizza == 'n') {
+        printf("Has elegido una pizza no vegetariana. Elige un ingrediente adicional:\n");
+        printf("p: Peperoni\n");
+        printf("j: Jamón\n");
+        printf("s: Salmón\n");
+        printf("Ingresa la letra correspondiente: ");
+        scanf(" %c", &ingrediente);
+
+        
+        printf("Has elegido una pizza no vegetariana con mozzarella, tomate ");
+        if (ingrediente == 'p') {
+            printf("y Peperoni.\n");
+        } else if (ingrediente == 'j') {
+            printf("y Jamón.\n");
+        } else if (ingrediente == 's') {
+            printf("y Salmón.\n");
+        } else {
+            printf("y un ingrediente no válido.\n");
+        }
+    } else {
+        printf("Tipo de pizza no válido.\n");
+    }
+
+    return 0;
+    
+}
