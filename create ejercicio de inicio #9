@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+    int cantidad=0, years=0;
+    float interes=0.0;
+    printf("ingrese la cantidad a invertir \n");
+    scanf("%d",&cantidad);
+    printf("ingrese el interes anual \n");
+    scanf("%f",&interes);
+    printf("ingrese los anios \n");
+    scanf("%d",&years);
+    float capitalObtenido=((interes*years)*(cantidad))+cantidad;
+    printf("El capital obtenido fue %f \n",capitalObtenido);
+
+    return 0;
+}
