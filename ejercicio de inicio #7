@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+    int peso = 0;
+    float estatura=0;
+    printf("ingrese su peso en kg\n");
+    scanf("%d",&peso);
+    printf("ingrese su estatura en m\n");
+    scanf("%f",&estatura);
+    float IMC = (peso) / (estatura * estatura);
+    printf("su IMC es: %f\n",IMC);
+
+
+    return 0;
+}
