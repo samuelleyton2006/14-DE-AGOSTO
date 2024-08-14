@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(void) {
+    int n=0,m=0.0;
+    printf("Digite um numero: ");
+    scanf("%d", &n);
+    printf("Digite um numero: ");
+    scanf("%d", &m);
+    int division=n/m;
+    int residuo=n%m;
+    printf("el numero %d",n);
+    printf(" entre el numero %d\n",m);
+    printf(" da como cociente %d \n",division);
+    printf("y tiene un residuo %d\n", residuo);
+
+    return 0;
+}
