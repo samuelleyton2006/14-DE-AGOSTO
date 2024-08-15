@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(void){
+	int numBarras=0, descuentoP=0;
+	float precioPan=3.49, descuento=0.60, costo=0.0;
+	printf("Ingrese el numero de barras de pan vendidas que no son del dia \n");
+	scanf("%d", &numBarras);
+	printf("El precio de una barra de pan del dia es: %f \n", precioPan );
+	descuentoP=0.60*100;
+	printf("EL descuento que se hace por no ser fresca es: %d \n", descuentoP);
+	costo=(numBarras*(precioPan-(precioPan*descuento)));
+	printf("El costo total de las barras compradas es de %f $", costo );
+	
+	return 0;
+}
