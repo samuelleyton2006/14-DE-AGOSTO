@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(void){
+	int cantidad=0;
+	float cantidadPrimer=0.0, cantidadSegun=0.0, cantidadTercer=0.0;
+	printf("Ingrese la cantidad a ingresar en la cuenta de ahorros\n");
+	scanf("%d", &cantidad);
+	cantidadPrimer=(cantidad*0.04)+cantidad;
+	cantidadSegun=(cantidadPrimer*0.04)+cantidadPrimer;
+	cantidadTercer=(cantidadSegun*0.04)+cantidadSegun;
+	printf("La cantidad de ahorros del primer year fue: %f\n", cantidadPrimer);
+	printf("La cantidad de ahorros del segundo year fue: %f\n", cantidadSegun);
+	printf("La cantidad de ahorros del tercer year fue: %f \n", cantidadTercer);
+	
+	return 0;	
+}
