@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    float puntuacion;
+    float dinero = 0.0;
+
+    printf("Ingrese su puntuación: ");
+    scanf("%f", &puntuacion);
+
+    if (puntuacion == 0.0) {
+        printf("Nivel de rendimiento: Inaceptable\n");
+        dinero = 0.0;
+    } else if (puntuacion == 0.4) {
+        printf("Nivel de rendimiento: Aceptable\n");
+        dinero = 1000.0;
+    } else if (puntuacion >= 0.6) {
+        printf("Nivel de rendimiento: Meritorio\n");
+        dinero = 1500.0;
+    } else {
+        printf("Puntuación no válida.\n");
+        return 1; 
+    }
+
+    printf("El empleado recibirá $%.2f\n", dinero);
+
+    return 0;
+}
