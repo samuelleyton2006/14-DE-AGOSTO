@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    
+    char nombre[50];
+    char sexo;
+
+
+    printf("Introduce tu nombre: ");
+    scanf("%s", nombre);
+
+    printf("Introduce tu sexo (M para masculino, F para femenino): ");
+    scanf(" %c", &sexo);
+
+    if ((sexo == 'F' && nombre[0] < 'M') || (sexo == 'M' && nombre[0] > 'N')) {
+        
+        printf("Perteneces al grupo A.\n");
+        
+    } else {
+        
+        printf("Perteneces al grupo B.\n");
+        
+    }
+
+    return 0;
+}
